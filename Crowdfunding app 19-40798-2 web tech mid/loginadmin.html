@@ -1,0 +1,28 @@
+<?php
+if(isset($_GET['Message'])){
+    echo "logout successful";
+}
+?>
+
+    <html>
+
+    <head>
+        <title>Sign In</title>
+    </head>
+
+    <body>
+        <fieldset style="color:white;width: 500px; margin:  0px auto; background-color:rgb(40, 80, 83);">
+            <legend style="background-color:rgb(89, 134, 137);">Login</legend>
+
+            <form action="logincheck.php" method="post" enctype="">
+                User Id<br> <input type="text" name="userid" value="" /> <br><br> Password
+                <br><input type="password" name="pass" value="" /> <br>
+                <br>
+                <hr>
+                <input type="submit" name="login" value="Login" />
+                <a href="registration_admin.html" style="color:#FF0000;">Register </a>
+        </fieldset>
+        </form>
+    </body>
+
+    </html>
